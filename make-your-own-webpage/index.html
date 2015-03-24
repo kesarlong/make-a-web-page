@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <!-- This is an HTML comment. Comments doesn't show up on web browsers. HTML structure begins with a doctype and then the head -->
+<head>
+  <meta charset="UTF-8">
+  <!-- The head section is where content is not displayed as well but where you will add the meta data, page title, stylesheets and scripts. Below this is a <title> element, the title is used to tell the browser what text to put on the tab for your page so users know that the page is about. -->
+  <title>Kesar's Notes</title>
+  <!-- Below this is a <link> tag to css file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>My Notes</h1>
+  <div class="mynotes">
+    <!--I use <ol> element to list my notes in "ordered list". -->
+    <ol>
+      <!-- <li> is "list item" -->
+      <li><a href="#notes-1">What is the Web and HTML?</a>
+        <!-- Next I add an "unordered list" within the "list item" of my "ordered list" -->
+        <ul>
+          <li><a href="#notes-1-1">How the Web Works</a></li>
+          <li><a href="#notes-1-2">HTML</a></li>
+          <li><a href="#notes-1-3">Tags and Elements</a></li>
+          <li><a href="#notes-1-4">Why Do Programmers Call Computers Stupid?</a></li>
+          <li><a href="#notes-1-5">Inline vs Block Elements</a></li>
+        </ul>
+      </li>
+      <li class="mynotes-notes"><a href="#notes-2">Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#notes-2-1">Developer Tools</a></li>
+          <li><a href="#notes-2-2">HTML's "tree-like" Structure</a></li>
+          <li><a href="#notes-2-3">Indentations and Boxes</a></li>
+          <li><a href="#notes-2-4">Text Editors</a></li>
+        </ul>
+      </li>
+      <li class="mynotes-notes"><a href="#notes-3">Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#notes-3-1">Avoiding Repetition</a></li>
+          <li><a href="#notes-3-2">CSS</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Important Definitions</h1>
+  <div class="notes">
+    <h2 id="notes-1">What is the Web and HTML?</h2>
+    <div class="definition" id="notes-1-1">
+      <div class="definition-title">
+        How the Web Works
+      </div>
+      <div class="definition-description">
+        <p>
+          The web consists of computers that communicate with each other using HTTP requests.
+          <b>HTTP Request</b> (Which stands for hypertext transfer protocal) to
+          a <em>server</em> (computer).
+        </p>
+        <p>
+          The server finds the HTML document the user is looking for and sends
+          it back to the user's <em>
+          web browser</em> which then interprets the page and displays it on
+          the user's monitor.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-1-2">
+      <div class="definition-title">
+        HTML
+      </div>
+      <div class="definition-description">
+        <p>
+          HTML stands for <em>Hypertext Markup
+          Language.</em> HTML documents form the majority of the
+          content on the web.
+        </p>
+        <p>
+          HTML documents contain <em>text
+          content</em> which describes "what you see" and
+          <em>markup</em> which describes
+          "how it looks".
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-1-3">
+      <div class="definition-title">
+        Tags and Elements
+      </div>
+      <div class="definition-description">
+        <p>
+          HTML documents are made of HTML
+          <b>elements</b>. When writing HTML, we
+          tell browsers the type of each element by using HTML
+          <b>tags</b>.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-1-4">
+      <div class="definition-title">
+        Why Do Programmers Call Computers Stupid?
+      </div>
+      <div class="definition-description">
+        <p>
+        Programmers often describe computers as "stupid."
+They are addressing an important point about how computers understand the instructions that human programmers give them.Typos and mistakes can lead to problems with your program.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-1-5">
+      <div class="definition-title">
+        Inline vs Block Elements
+      </div>
+      <div class="definition-description">
+        <p>
+          HTML elements are either <b>inline</b>
+          or <b>block</b>. Block elements form
+          an "invisible box" around the content inside of them.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="notes">
+    <h2 id="notes-2">Creating a Structured Document with HTML</h2>
+    <div class="definition" id="notes-2-1">
+      <div class="definition-title">
+        Developer Tools (in the Browser)
+      </div>
+      <div class="definition-description">
+        <p>
+          HTML elements are either <b>inline</b>
+          or <b>block</b>. Block elements form
+          an "invisible box" around the content inside of them.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-2-2">
+      <div class="definition-title">
+        The "tree-like structure" of HTML
+      </div>
+      <div class="definition-description">
+        <p>
+          The "tree-like structure" comes from the fact that HTML
+          elements can have other elements inside of them. This helps tell robots how the document is structured
+        </p>
+        <p>
+          In a browser, this structure shows up as a series
+          of nested boxes. There are boxes inside of boxes
+          inside of boxes, and so on...
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-2-3">
+      <div class="definition-title">
+        The relationship between indented HTML and boxes
+      </div>
+      <div class="definition-description">
+        <p>
+          When you read an HTML document as
+          <em>text</em>, you see a wave of
+          changing indentations going up and down the left side
+          of the document. The more indented an element is, the
+          more deeply nested its corresponding "box" is.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="notes-2-4">
+      <div class="definition-title">
+        Text Editors (for programming)
+      </div>
+      <div class="definition-description">
+        <p>
+          When writing code, programmers use special text editors
+          (like Sublime Text for example). These editors make the
+          programmer's life easier. For example, some text editors
+          will automatically generate a closing HTML tag when you
+          write an opening tag.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="notes">
+    <h2 id="notes-3">Adding CSS Style to HTML Structure</h2>
+    <div class="definition" id="notes-3-1">
+      <div class="definition-title">
+        Avoiding Repetition
+      </div>
+      <div class="definition-description">
+        <p>
+          Avoiding repetition is important for a variety of reasons.
+        </p>
+        <p>
+          <b>Avoiding Errors:</b> When programmers <em>don't</em> avoid repetition, they will often have to do the same thing over and over. This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times. This can lead to errors when the programmer decides to make a change to something. If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.
+        </p>
+        <p>
+          <b>Consistency:</b> In this web page, I wanted every notes to look the same. Instead of manually giving each one the same style, I was able to assign each notes <span class="code">div</span> the same <span class="code">class</span> and then specify the style for that class in only one place! By avoiding repetion, it's now very easy for me to make changes to this style.
+        </p>
+      </div>
+    </div>
+    <div class="definition" id="-3-2">
+      <div class="definition-title">
+        CSS
+      </div>
+      <div class="definition-description">
+        <p>
+          CSS stands for Cascading Style Sheets and they give programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same class name and then specifying the style that should apply to that class.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
